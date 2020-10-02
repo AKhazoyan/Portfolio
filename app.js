@@ -13,7 +13,7 @@ let projects = [
     {projectImage: 'img/project3.png', projectName: 'Online Registration Form', projectDescription: 'A mobile-friendly registration form with required fields that alert the user to missing information.', projectSkills: 'Mobile-first Approach, Responsive Design, & HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-3/'},
     {projectImage: 'img/project4.png', projectName: 'Style Guide SASS Refactor', projectDescription: 'Took an existing CSS-only style guide and refactored it into clean, maintainable SASS.', projectSkills: 'SASS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-4/'},
     {projectImage: 'img/project5.png', projectName: 'Interactive Photo Gallery', projectDescription: 'An interactive photo gallery featuring a lightbox and dynamic search bar.', projectSkills: 'Javascript, jQuery, & hand-coded search.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-5/'},
-    {projectImage: 'img/project6.png', projectName: 'Game Show App', projectDescription: 'A word guessing game where players use a custom, onscreen keyboard to guess a randomly selected phrase.', projectSkills: 'Javascript/HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-6/'}
+    {projectImage: 'img/project6.png', projectName: 'Game Show App', projectDescription: 'A word guessing game where players use a custom, onscreen keyboard to guess a randomly selected phrase. (Desktop/Tablet)', projectSkills: 'Javascript/HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-6/'}
 ];
 
 
