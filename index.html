@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Amy Khazoyan</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="view">
+            <nav>
+                <p>Amy K</p>
+                <div class="navigation">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <div class="about" id="about">
+                <img id="amyimg" src="img/AmyK.jpg" alt="Photo of Amy K">
+                <div class="info">
+                    <h2>Hi! I'm Amy Khazoyan.</h2>
+                    <p>I'm a front end web developer who loves bringing your digital designs to life! I'm an advocate of mobile-first and responsive design and am always excited for new projects. I love reading (over 100 books a year) and discovering new teas (the latest being chocolate lavender)!</p>
+                </div>
+            </div>
+
+            <div class="projects" id="projects">
+                <h1>Projects</h1>
+                <div class="projectCards">
+                    <img src="img/project1square.png" alt="Preview image of Project One: Profile Page Concept" data-index="0">
+                    <img src="img/project2square.png" alt="Preview image of Project Two: Experimental Mobile-first Responsive Layout" data-index="1">
+                    <img src="img/project3square.png" alt="Preview image of Project Three: Online Registration Form" data-index="2">
+                    <img src="img/project4square.png" alt="Preview image of Project Four: Style Guide SASS Refactor" data-index="3">
+                    <img src="img/project5square.png" alt="Preview image of Project Five: Interactive Photo Gallery" data-index="4">
+                    <img src="img/project6square.png" alt="Preview image of Project Six: Game Show App" data-index="5">
+                </div>
+            </div>
+
+            <div class="overlay hidden">
+                <div class="modal">
+                    <button class="modal-close">&times;</button>
+                    <button class="previous">&#60;</button>
+                    <button class="next">&#62;</button>
+                    <div class="modal-content">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <h1>Contact</h1>
+                <div class="contactWays">
+                    <div class="cont">
+                        <img src="img/mail.svg" alt="Envelope icon">
+                        <a href= "mailto:example@example.com">Email Me</a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/message.svg" alt="Messaging icon">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </div>
+                    <div class="cont">
+                        <img src="img/location.svg" alt="Location icon">
+                        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav>
+                    <p>Amy K</p>
+                    <div class="navigation">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
