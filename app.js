@@ -8,7 +8,7 @@ let currentModalIndex = 0;
 
 
 let projects = [
-    {projectImage: 'img/project1.png', projectName: 'Profile Page Concept', projectDescription: 'At the very start of my TechDegree program I built an interactive web profile page as some of my first steps into web layout and styling.', projectSkills: 'HTML, CSS, & Git.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-1/'},
+    {projectImage: 'img/project1.png', projectName: 'Profile Page Concept', projectDescription: 'At the very start of my dev program, I built an interactive web profile page as a first exploration of layout and styling.', projectSkills: 'HTML, CSS, & Git.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-1/'},
     {projectImage: 'img/project2.png', projectName: 'Experimental Mobile-first Responsive Layout', projectDescription: 'An exploration of mobile-first and responsive design techniques for a hypothetical developer page. Works on mobile through desktop.', projectSkills: 'Mobile-first Approach, Responsive Design, & HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-2/'},
     {projectImage: 'img/project3.png', projectName: 'Online Registration Form', projectDescription: 'A mobile-friendly registration form with required fields that alert the user to missing information.', projectSkills: 'Mobile-first Approach, Responsive Design, & HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-3/'},
     {projectImage: 'img/project4.png', projectName: 'Style Guide SASS Refactor', projectDescription: 'Took an existing CSS-only style guide and refactored it into clean, maintainable SASS.', projectSkills: 'SASS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-4/'},
