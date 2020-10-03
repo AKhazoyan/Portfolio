@@ -60,9 +60,10 @@ nav {
 }
 
 .projectCards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    justify-content: center;
 
     img {
         width: 100%;
@@ -72,6 +73,13 @@ nav {
         border: 5px solid black;
         border-radius: 10px;
         cursor: pointer;
+    }
+
+    @for $i from 1 through 6 {
+        img:nth-of-type(#{$i}) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1 * $i;
+        }
     }
 }
 
@@ -247,6 +255,7 @@ a:hover::after {
     }
 
     .projectCards{
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -263,6 +272,7 @@ a:hover::after {
 @media (min-width: 1024px) {
     
     .projectCards{
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
