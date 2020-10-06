@@ -252,6 +252,36 @@ a:hover::after {
 
     .projects{
         margin-bottom: 60px;
+
+        img:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(3) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(4) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(5) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3;
+        }
+
+        img:nth-child(6) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 3;
+        }
     }
 
     .projectCards{
@@ -270,7 +300,38 @@ a:hover::after {
 
 
 @media (min-width: 1024px) {
-    
+    .projects {
+        img:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(3) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(4) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(5) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(6) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 2;
+        }
+    }
+
     .projectCards{
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
