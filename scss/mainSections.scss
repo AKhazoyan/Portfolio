@@ -1,0 +1,100 @@
+//Navigation
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    p {
+        padding: 16px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .navigation {
+        display: flex;
+    }
+}
+
+//About
+.about {
+
+    img {
+        display: block;
+        height: 300px;
+        margin: auto;
+        border-radius: 10px;
+        border: 5px solid black;
+    }
+
+    .info {
+        margin-top: 75px;
+        margin-bottom: 48px;
+    }
+}
+
+//Project Cards
+.projectCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+
+    .wrapper {
+        overflow: hidden;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 24px;
+        cursor: pointer;
+    }
+
+    img {
+        display: block;
+        width: 100%;        
+        transition: transform .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: scale3d(1.07, 1.07, 1);
+        }
+    }
+
+    @for $i from 1 through 8 {
+        img:nth-of-type(#{$i}) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1 * $i;
+        }
+    }
+}
+
+//Contact
+.contact {
+    margin-bottom: 50px;
+
+    .contactWays {
+        margin-left: 40px;
+    }
+}
+
+.cont {
+    display: flex;
+    margin-bottom: 8px;
+
+    img {
+        padding-right: 24px;
+        height: 35px;
+    }
+
+    a {
+        padding: 0;
+        margin: auto 0;
+    }
+}
+
+
+//Footer
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,37 @@
+//Hover Link Effect
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 16px 8px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: color .5s ease;
+
+    &.modalImageLink {
+        display: inline;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+a::after {    
+    bottom: -2px;
+    height: 2px;
+    background: black;
+    width: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+a:hover::after { 
+    width: 100%;
+}

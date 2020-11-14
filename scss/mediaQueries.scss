@@ -1,0 +1,133 @@
+@media (min-width: 768px) {
+    .about {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 80px 60px;
+
+        img {
+            margin-right: 36px;
+        }
+    }    
+
+    .projects{
+        margin-bottom: 60px;
+
+        img:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(3) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(4) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(5) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3;
+        }
+
+        img:nth-child(6) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 3;
+        }
+        
+        img:nth-child(7) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 4;
+        }
+
+        img:nth-child(8) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 4;
+        }
+    }
+
+    .projectCards{
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal {
+        max-width: 700px;
+
+        .text-container {
+            padding: 0 65px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .projects {
+        img:nth-child(1) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(2) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(3) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1;
+        }
+
+        img:nth-child(4) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(5) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(6) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 2;
+        }
+
+        img:nth-child(7) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3;
+        }
+
+        img:nth-child(8) {
+            -ms-grid-column: 2;
+            -ms-grid-row: 3;
+        }
+    }
+
+    .projectCards{
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .about {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 60px;
+
+        img {
+            margin-right: 60px;
+        }
+    }
+
+    .modal {
+        max-width: 800px;
+        margin-top: 6%;
+    }
+}

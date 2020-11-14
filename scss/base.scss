@@ -1,0 +1,19 @@
+* {
+    font-family: "Segoe", "Segoe UI", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#view {
+    max-width: 1168px;
+    margin: auto;
+}
+
+body {
+    margin: 0 8px;
+    background-color: #CD5C5C;
+    color: white;
+}

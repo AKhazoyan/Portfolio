@@ -8,19 +8,21 @@ let currentModalIndex = 0;
 
 
 let projects = [
-    {projectImage: 'img/project1.png', projectName: 'Profile Page Concept', projectDescription: 'At the very start of my dev program, I built an interactive web profile page as a first exploration of layout and styling.', projectSkills: 'HTML, CSS, & Git.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-1/'},
+    // {projectImage: 'img/project1.png', projectName: 'Profile Page Concept', projectDescription: 'At the very start of my dev program, I built an interactive web profile page as a first exploration of layout and styling.', projectSkills: 'HTML, CSS, & Git.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-1/'},
     {projectImage: 'img/project2.png', projectName: 'Experimental Mobile-first Responsive Layout', projectDescription: 'An exploration of mobile-first and responsive design techniques for a hypothetical developer page. Works on mobile through desktop.', projectSkills: 'Mobile-first Approach, Responsive Design, & HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-2/'},
     {projectImage: 'img/project3.png', projectName: 'Online Registration Form', projectDescription: 'A mobile-friendly registration form with required fields that alert the user to missing information.', projectSkills: 'Mobile-first Approach, Responsive Design, & HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-3/'},
-    {projectImage: 'img/project4.png', projectName: 'Style Guide SASS Refactor', projectDescription: 'Took an existing CSS-only style guide and refactored it into clean, maintainable SASS.', projectSkills: 'SASS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-4/'},
+    // {projectImage: 'img/project4.png', projectName: 'Style Guide SASS Refactor', projectDescription: 'Took an existing CSS-only style guide and refactored it into clean, maintainable SASS.', projectSkills: 'SASS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-4/'},
     {projectImage: 'img/project5.png', projectName: 'Interactive Photo Gallery', projectDescription: 'An interactive photo gallery featuring a lightbox and dynamic search bar.', projectSkills: 'Javascript, jQuery, & hand-coded search.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-5/'},
-    {projectImage: 'img/project6.png', projectName: 'Game Show App', projectDescription: 'A word guessing game where players use a custom, onscreen keyboard to guess a randomly selected phrase. (Desktop/Tablet)', projectSkills: 'Javascript/HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-6/'}
+    {projectImage: 'img/project6.png', projectName: 'Game Show App', projectDescription: 'A word guessing game where players use a custom, onscreen keyboard to guess a randomly selected phrase. (Desktop/Tablet)', projectSkills: 'Javascript/HTML/CSS.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-6/'},
+    {projectImage: 'img/project7.png', projectName: 'WebApp Dashboard', projectDescription: 'A proof of concept dashboard for a web app displaying analytics (including visualizations), user data, settings and more. Also implements localStorage APIs for saving/resetting preferences.', projectSkills: 'HTML/CSS, JavaScript, Chart.js, localStorage.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-7/'},
+    {projectImage: 'img/project8.png', projectName: 'Employee Directory', projectDescription: 'An interactive employee directory with a responsive layout and search functionality. Dynamically pulls information from the <a href="https://randomuser.me" target="_blank">RandomUser.me API</a>.', projectSkills: 'HTML/CSS, JavaScript, JSON API.', projectLink: 'https://akhazoyan.github.io/Techdegree-Project-8/'}
 ];
 
 
 // Display Modal
 function displayModal(selectedProject){
     selectedProject = projects[selectedProject];
-    let modalHTML = `
+    var modalHTML = `<div class="modalContent">
         <a class="modalImageLink" target="_blank" href="${selectedProject.projectLink}"><img class="largeProjectImage" src="${selectedProject.projectImage}" alt="Preview image of ${selectedProject.projectName}"/></a>
         <div class="text-container">
             <h2 class="projectName">${selectedProject.projectName}</h2>
@@ -28,6 +30,7 @@ function displayModal(selectedProject){
             <p class="projectSkills"><span class="skills">Skills Used:</span> ${selectedProject.projectSkills}</p>
             <a target="_blank" href="${selectedProject.projectLink}">View Full Project!</a>
         </div>
+    </div>
     `;
 
     overlay.classList.remove("hidden");
@@ -78,9 +81,11 @@ overlay.addEventListener('click', function(e) {
 next.addEventListener('click', function() {
     displayModal(currentModalIndex + 1);
     currentModalIndex += 1;
+    document.querySelector('.modalContent').classList.add('modalContentRight');
 });
 
 previous.addEventListener('click', function() {
     displayModal(currentModalIndex - 1);
     currentModalIndex -= 1;
+    document.querySelector('.modalContent').classList.add('modalContentLeft');
 });
